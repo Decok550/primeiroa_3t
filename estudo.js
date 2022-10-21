@@ -1,4 +1,6 @@
-
+function moeda(atual){
+  return atual.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
+}
 function calcula(){
    let c = document.getElementById("valor").value;
    let j = document.getElementById("juros").value;
@@ -8,8 +10,14 @@ function calcula(){
      document.getElementById("valor").focus();
     return
    }
+   if (!Number(j)){
+    alert("O valor do juros deve ser um Número");
+    document.getElementById("juros").value = "";
+    document.getElementById("juros").focus();
+   return
+  }
    let r = c * (1 + (j/100));
-   document.write("Resultado:" + r)
+   document.write("Resultado:" + moeda(r))
 }
 
 let op = "";
