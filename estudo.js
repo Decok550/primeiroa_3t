@@ -2,6 +2,12 @@
 function calcula(){
    let c = document.getElementById("valor").value;
    let j = document.getElementById("juros").value;
+   if (!Number(c)){
+     alert("O valor deve ser um Número");
+     document.getElementById("valor").value = "";
+     document.getElementById("valor").focus();
+    return
+   }
    let r = c * (1 + (j/100));
    document.write("Resultado:" + r)
 }
