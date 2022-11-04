@@ -33,7 +33,7 @@
     color:rgb(255, 255, 255);
     cursor: pointer
 }
-.splistameses{
+#splistameses{
     text-align: start;
     border-style: dotted;
     border-color: blue;
