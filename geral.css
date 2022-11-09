@@ -13,6 +13,14 @@
     border-radius: 8px;
     padding: 8px;
 }
+.calculadora input:focus{
+    background: rgb(32, 32, 32);
+    color: white;
+}
+.calculadora button{
+    padding: 5px 20px;
+    margin-top: 20px;
+}
 #sptotal{
     background:rgb(0, 0, 0);
     color: rgb(255, 255, 255);
@@ -41,4 +49,14 @@
     color: red;
     background: white;
     margin-top: 10px;
+}
+#splistameses{
+    background: white;
+    color: red;
+    text-align: start;
+    margin-top: 10px;
+    border-radius: 10px;
+    border-color: rgb(0, 0, 0);
+    border-width: 2px;
+    border-style: solid;
 }
