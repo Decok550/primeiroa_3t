@@ -65,9 +65,9 @@ function calcule (){
   
 }
 function calculaesg(){
-   let a = 3;
-   let b = -2;
-   let c = -8;
+   let a = document.getElementById("a").value;
+   let b = document.getElementById("b").value;
+   let c = document.getElementById("c").value;
    delta = (b*b) - (4*a*c);
    let raiz;
    let x1, x2;
